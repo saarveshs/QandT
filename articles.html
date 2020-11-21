@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Articles</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #fde3c6;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 16px; 
+  line-height: 2px;
+  border-radius: 4px;
+}
+
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+
+.header-right {
+  float: right;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+
+.main {
+  float: center;
+  width: 100%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.footsection
+{
+	background-color: #fde3c6;
+	color: #262626;
+	text-align: justify;
+	width:100%;
+	padding: 10px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+	align: center;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+   .main {
+    width: 100%;
+  }
+}
+
+#borderimg1 { 
+  border: 7px solid transparent;
+  padding: 5px;
+  border-image: url(imgs/orgglit.jpg) 30 round;
+}
+
+
+.collapsible {
+  background-color: #ffb399;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+}
+
+.active, .collapsible:hover {
+  background-color: #ffcc99;
+  color: black;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #ffb399;
+}
+
+</style>
+</head>
+<body style="font-family:Segoe Print;">
+<center>
+<div style="background-image:url(imgs/stars.gif); background-size: cover; color: #b3b3b3; padding:15px;">
+  <h1>SoulWay</h1>
+  <h3>All about smiles and courage</h3>
+</div>
+</center>
+
+<div class="header">
+ 
+  <div class="header-right">
+    <a href="index.html">Home</a>
+	<a href="QandT.html">Quotes and Thoughts</a>
+	<a href="bookreviews.html">Book Reviews</a>
+    <a class="active" href="articles.html">Articles</a>
+    <a href="profile.html">Profile</a>
+	
+  </div>
+</div>
+
+<div style="overflow:auto">
+
+<button type="button" class="collapsible"><span style="font-family:Segoe Print;">
+Spread positivity? Want to inspire others through your articles?</span></button>
+<div class="content">
+  <p><a href= "mailto:soulwaybysarvesh@gmail.com" style="text-decoration: none;">
+	<span style ="color: white">
+	<u>Click here</u></a> <span style ="color: white">for submitting the articles.
+	Attach your name, title and content. Kindly ensure that your articles shall encase
+	the positive and inspirational influence.
+	Word limit is specified to a maximum of 400 words. See below articles for a better understanding.
+	Keep writing! Keep sharing! :)
+	</span>
+	</p>
+  </div>
+  <br>
+
+  <div class="main">
+  
+  <center>
+  
+  <img src="imgs/startline.png" style="width:300px;height:300px;">
+  
+  <p id="borderimg1">Here, the image tiles to fill the area.
+  The image is rescaled if necessary, to avoid dividing tiles.</p>
+<br>
+  
+    <p id="borderimg1">Here, the image tiles to fill the area.
+  The image is rescaled if necessary, to avoid dividing tiles.</p>
+<br>
+
+  <p id="borderimg1">Here, the image tiles to fill the area.
+  The image is rescaled if necessary, to avoid dividing tiles.</p>
+<br>
+
+  <p id="borderimg1">Here, the image tiles to fill the area.
+  The image is rescaled if necessary, to avoid dividing tiles.</p>
+<br>
+
+  <p id="borderimg1">Here, the image tiles to fill the area.
+  The image is rescaled if necessary, to avoid dividing tiles.</p>
+<br>
+  
+  </center>
+</div>
+</div>
+
+<div class= "footsection">
+<center>
+    <a href="https://twitter.com/saarvesh_qandt" target="_blank">
+	<i class="fa fa-twitter-square fa-2x social" style="color: #262626"></i></a>  
+    <a href="https://www.linkedin.com/in/sarveshwinsome/" target="_blank">
+	<i class="fa fa-linkedin-square fa-2x social" style="color: #262626"></i></a>
+	<a href="https://medium.com/@saarveshannyy" target="_blank">
+	<i class="fa fa-medium fa-2x social" style="color: #262626"></i></a>
+	<a href="mailto:soulwaybysarvesh@gmail.com" target="_blank">
+	<i class="fa fa-envelope-square fa-2x social" style="color: #262626"></i></a>
+	
+	<p style="font-family: Arial";> &copy; SoulWay, 2020</p>
+	</center>
+
+<b><i>Disclaimer:</b></i><br>
+	Website content is managed by Sarvesh Soni.
+The information and design that is being presented or used are veracious to my knowledge. 
+Any kind of similarity is purely coincidental. 
+The content is subject to change and should not be constructed as a commitment. 
+	</div>
+
+	
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Author Profile</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #bfbfbf;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 16px; 
+  line-height: 2px;
+  border-radius: 4px;
+}
+
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+
+.header-right {
+  float: right;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.card {
+  box-shadow: 2px 7px 7px 2px black;
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+  
+}
+
+.title {
+  color: grey;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 2px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+  font-family: Segoe Print;
+}
+
+a {
+  text-decoration: none;
+  font-size: 15px;
+  color: black;
+}
+
+
+
+.main {
+  float: center;
+  width: 100%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.footsection
+{
+	background-color: #bfbfbf;
+	color: #262626;
+	text-align: justify;
+	width:100%;
+	padding: 10px;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+	align: center;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+   .main {
+    width: 100%;
+  }
+}
+.callout {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  margin-left: 20px;
+  max-width: 180px;
+}
+
+.callout-header {
+  padding: 5px 7px;
+  background-color: #595959;
+  font-size: 18px;
+  color: white;
+  border: 1px solid white;
+}
+
+.callout-container {
+  padding: 1px 7px;
+  background-color: #8c8c8c;
+  font-size: 14px;
+  color: white;
+  border: 1px solid white;
+}
+
+.closebtn {
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: grey;
+}
+</style>
+</head>
+<body style="font-family:Segoe Print;">
+<center>
+<div style="background-image:url(imgs/stars.gif); background-size: cover; color: #b3b3b3; padding:15px;">
+  <h1>SoulWay</h1>
+  <h3>All about smiles and courage</h3>
+</div>
+</center>
+
+<div class="header">
+ 
+  <div class="header-right">
+    <a href="index.html">Home</a>
+	<a href="QandT.html">Quotes and Thoughts</a>
+	<a href="bookreviews.html">Book Reviews</a>
+    <a href="articles.html">Articles</a>
+    <a class="active" href="profile.html">Profile</a>
+	
+  </div>
+</div>
+<br>
+<div class="card">
+  <img src="imgs/Profile.jpg" alt="Author" width="100%" height="100%">
+  <h2>Sarvesh Soni</h2>
+  <p class="title">Thriving in fast-paced world with low daring, moderate struggle, and high motivation.</p>
+  
+  
+  <p><a href="mailto:soulwaybysarvesh@gmail.com"><button>Contact</button></a></p>
+</div>
+
+	<div class="callout">
+  <div class="callout-header">Inquiry?</div>
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+  <div class="callout-container">
+    <p>For any technical inquiry or feedback, you may kindly click on contact button.
+	</p>
+  </div>
+</div>
+
+
+<div class= "footsection">
+<center>
+    <a href="https://twitter.com/saarvesh_qandt" target="_blank">
+	<i class="fa fa-twitter-square fa-2x social" style="color: #262626"></i></a>  
+    <a href="https://www.linkedin.com/in/sarveshwinsome/" target="_blank">
+	<i class="fa fa-linkedin-square fa-2x social" style="color: #262626"></i></a>
+	<a href="https://medium.com/@saarveshannyy" target="_blank">
+	<i class="fa fa-medium fa-2x social" style="color: #262626"></i></a>
+	<a href="mailto:soulwaybysarvesh@gmail.com" target="_blank">
+	<i class="fa fa-envelope-square fa-2x social" style="color: #262626"></i></a>
+	
+	<p style="font-family: Arial";> &copy; SoulWay, 2020</p>
+	</center>
+
+
+	
+<b><i>Disclaimer:</b></i><br>
+	Website content is managed by Sarvesh Soni.
+The information and design that is being presented or used are veracious to my knowledge. 
+Any kind of similarity is purely coincidental. 
+The content is subject to change and should not be constructed as a commitment. 
+	</div>
+
+</body>
+</html>
