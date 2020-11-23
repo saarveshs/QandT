@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Book Reviews</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Livvic' rel='stylesheet'>
 <style>
 * {
   box-sizing: border-box;
@@ -64,7 +65,7 @@
 
 .footsection
 {
-	background-color: #9DD9F3;
+	background-color: #bbe5f7;
 	color: #262626;
 	text-align: justify;
 	width:100%;
@@ -89,7 +90,7 @@
   }
 }
 .collapsible {
-  background-color: #0059b3;
+  background-color: #004d99;
   color: white;
   cursor: pointer;
   padding: 12px;
@@ -119,55 +120,23 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #0059b3;
+  background-color: #004d99;
 }
 
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
+#more1 {display: none;} 
+#more2 {display: none;}
+#more3 {display: none;}  
+#more4 {display: none;}  
+#more5 {display: none;}  
+#more6 {display: none;} 
+#more7 {display: none;}  
+#more8 {display: none;}  
+#more9 {display: none;}  
+#more10 {display: none;}  
 
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: auto;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #595959;
-  color: white;
-  transform: rotateY(180deg);
-}  
-  
-#more1 {display: none;}  
-
-#more2 {display: none;}  
   
 .buttonreadmore {
-  background-color: #595959;
+  background-color: #004d99;
   border: none;
   color: white;
   padding: 8px 12px;
@@ -185,18 +154,36 @@
 }
 
 .text-block {
-  position: absolute;
+  position: relative;
   bottom: 15px;
   right: 5px;
-  background-color: #181818;
-  color: white;
+  color: black;
+  b
   padding-left: 15px;
   padding-right: 15px;
 }
   
+  
+  .inbox {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img.a {
+  vertical-align: 50%;
+}
+
 </style>
 </head>
-<body style="font-family:Segoe Print;">
+<body style="font-family:Livvic;">
 
 <center>
 <div style="background-image:url(imgs/stars.gif); background-size: cover; color: #b3b3b3; padding:15px;">
@@ -219,349 +206,365 @@
 
 <div style="overflow:auto">
 
-<button type="button" class="collapsible"><span style="font-family:Segoe Print;">
-Read a book? Want to post the gist?</span></button>
+<button type="button" class="collapsible"><span style="font-family:Livvic;">
+Read a book? Want to post the gist?</span> &nbsp; <img class="a" src="imgs/new1.gif" style="width:23px;height:12px;">
+</button>
 <div class="content">
   <p><a href= "mailto:soulwaybysarvesh@gmail.com" style="text-decoration: none;">
 	<span style ="color: white">
-	<u>Click here</u></a> <span style ="color: white">for submitting the shorty-sweety book reviews. Attach your name, picture, title of the book 
+	<u>Click here</u></a> <span style ="color: white">for submitting the shorty-sweety book reviews or summaries.
+	Attach your name, picture, title of the book 
 and name of the author along with the reviews.
-	Word limit is specified to a maximum of 300 words. See below reviews for a better understanding.
+	Word limit is specified to 100-300 words. See below reviews for a better understanding.
 	Keep reading! Keep sharing! :)
 	</span>
 	</p>
   </div>
+<br>
+
+<div class="main">
+<center>
+   <img src="imgs/brstart.png" style="width:300px;height:300px; border: 2px solid #4dc3ff;">
+   <br>
+   </div>
+  <hr style="height:1px;border-width:0;background-color:#9DD9F3">
+  <br>
   
-<br><br>
-
  <div class="main">
-
-  <center>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
+<center>
 	<div class="containerimg">
-      <img src="imgs/adi.jfif" alt="Aadil" style="width:300px;height:300px;">
-	  <div class="text-block">
-    <h4>Aadil Chheda</h4>
+      <img src="imgs/shorya.jpeg" style="width:225px;height:225px;">
+	  <div class="inbox">
+  <img src="imgs/blubg.jpg" style="width:225px;height:35px;">
+  <div class="centered"><h3>Shourya Rohilla</h3></div>
+</div>
   </div>
 </div>
-    </div>
-    <div class="flip-card-back">
-      <p>Book: Sunrise</p> 
-      <p>Author: JP Dumy</p> 
 	  </center>
-      <p>As the title suggests, the book is all about <span id="dots1">...</span><span id="more1">
-	  the speculated theories of what probably could a good character and a good work can potentially achieve. 
-	  </span></p><button class ="buttonreadmore" onclick="myFunction1()" id="myBtn1">Read more</button>
-    </div>
-  </div>
-</div>
-</div>
- <hr style="height:1px;border-width:0;background-color:#9DD9F3">
+	   <b><p>Life Without Limits by Nick Vujicic</p></b>
+      <p>There are certain books that move you from inside and then there are books that help you move your
+	  problems from inside. 'Life Without Limits' privileges<span id="dots2">...</span><span id="more2">
+	   to fall in both the categories. The mere 
+	  thought of imagining yourself in place of the author, a person born without arms or legs, can 
+	  leave you in a dark zone of mind where you don't even know what will you do. Yet this author 
+	  stands as the central character of his book where he tells the story of his physical 
+	  disabilities and the emotional battles he endured while learning to deal with them as a child,
+	  teen and a young adult. But what is he today? 
+NICK VUJICIC is an international and New York Times best-selling author, evangelist, and 
+most prominently, a motivational speaker. In 'Life Without Limits', Nick talks about the 
+struggles he faced since childhood, and how it took him years to even accept the disabilities 
+he was born with. He walks us through the hardest times of his childhood and casts light on 
+the unique challenges that a person like him faces. But all this for what? To gain sympathy? Never. 
+Through these hardships, Nick inspires you to shatter your own limits that life, or you have 
+placed upon yourself. He motivates you to think that if a person with such disabilities 
+can prosper in life then why can't you? He keeps asking the readers to think about, 
+"What would your life be like if anything were possible?" He eagerly spreads his 
+central message: The most important goal is to find your life's purpose and to never give up,
+ despite whatever difficulties or seemingly impossible odds stand in your way. Every chapter of 
+ the book will have your inner spirit rise up a level, and subtly, you will learn to find a way 
+ to fight your problems and grow through each one of them.
+A must read for anyone struggling to find the purpose of their lives. 
+Let Nick inspire you to start living your own life without limits.
+	  </span></p><button class ="buttonreadmore" onclick="myFunction2()" id="myBtn2">Read more</button>
+    
+
+<hr style="height:1px;border-width:0;background-color:#9DD9F3">
 <br>
 
  <div class="main">
 <center>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
 	<div class="containerimg">
-      <img src="imgs/chinu.jpeg" alt="Chinmaya" style="width:300px;height:300px;">
-	  <div class="text-block">
-    <h4>Chinmaya Dharmadhikari</h4>
+      <img src="imgs/khushi.jpeg" style="width:225px;height:225px;">
+	  <div class="inbox">
+  <img src="imgs/blubg.jpg" style="width:225px;height:35px;">
+  <div class="centered"><h3>Khushi Thakkar</h3></div>
+</div>
   </div>
 </div>
-    </div>
-    <div class="flip-card-back">
-      <p>Book: Mumbai Indians</p> 
-      <p>Author: Sachin Raina</p> 
 	  </center>
-      <p>As the title suggests, the book is all about <span id="dots2">...</span><span id="more2">
-	  the speculated theories of what probably could a good character and a good work can potentially achieve. 
-	  </span></p><button class ="buttonreadmore" onclick="myFunction2()" id="myBtn2">Read more</button>
-    </div>
+	   <b><p>The Hunger Games Trilogy by Suzanne Collins</p></b>
+      <p>The Hunger Games Trilogy is a series of 3 young adult novels written with an excellent choice 
+	  of words, grasping story and <span id="dots8">...</span><span id="more8">
+	  conviction which transports the reader to an actual Hunger Games world. The novels in the trilogy are
+	  The Hunger Games (2008), Catching Fire (2009), and Mockingjay (2010).
+The novels are based in the Hunger Games Universe, an apocalyptic world, consisting of the wealthy Capitol 
+and 13 districts in varying states of poverty. Each year, the first 12 districts have to send their children 
+to participate in a compulsory televised battle death match called The Hunger Games. The protagonist, 
+Katniss Everdeen, lives in District 12, the poorest area of Panem, where people die of hunger on a daily basis.
+ The novels are based on how ‘Hunger Games’ destroys Katniss’ and her loved ones’ lives when her sister is
+ selected to participate in the games, for whom she volunteers. The first novel involves her journey through 
+ the games, the second one is based on the aftermath of the previous games where she had defied the Capitol 
+ and won the competition along with her partner and the third novel is based on how she motivates people from 
+ all districts to revolt against the Capitol to end an everlasting era of oppression and domination. 
+It is a nail biting, extremely thought-provoking and exciting book which keeps you on the edge and leaves 
+you guessing what is going to happen next, a must read for fiction lovers! Suzanne Collins has definitely 
+outdone herself with this trilogy and a very recent addition of the trilogy’s sequel 
+‘The Ballad of Songbirds and Snakes’.
+	  </span></p><button class ="buttonreadmore" onclick="myFunction8()" id="myBtn8">Read more</button>
+<hr style="height:1px;border-width:0;background-color:#9DD9F3">
+<br>
+
+   <div class="main">
+  <center>
+	<div class="containerimg">
+      <img src="imgs/raksha.jpg" style="width:225px;height:225px;">
+	  <div class="inbox">
+  <img src="imgs/blubg.jpg" style="width:225px;height:35px;">
+  <div class="centered"><h3>Raksha</h3></div>
+</div>
   </div>
 </div>
-</div>
+	  </center>
+	  <b><p>The Hate U Give by Angie Thomas</p></b>
+      <p>To summarize the story I think the simplest 
+	  slogan I could use is "Black Lives Matter", released before the quote became a global movement
+	  that <span id="dots5">...</span><span id="more5">questioned racism in all its forms, “The Hate U give“ came with a much more direct and 
+	  heartfelt perspective into what it actually feels like to be a witness and victim of police 
+	  brutality due to race/colour of skin.
+The protagonist of this young adult story is a very real sixteen-year-old girl who was just trying
+ to juggle her two lives; one as part of her hood where she could be who she truly was and the other 
+ in her all-white high school where she was one of them. So, when her childhood best friend is shot
+ to death by a white police officer for ‘doing nothing’ her life comes tumbling down to the reality 
+ of what it actually is like to be a ‘Black Person’.
+Her story for justice is a real one rather than heroic as she herself stumbles to find the courage 
+to fight, but it moves us all to see the reality of the so called 21st century America and the
+ root for why ‘Black Lives Matter’ wasn’t just a simple quote or hashtag but a global awakening 
+ call to all still bound by ideas of race and white supremacy. 
+	  </span></p><button class ="buttonreadmore" onclick="myFunction5()" id="myBtn5">Read more</button>
+    
 
-<hr style="height:1px;border-width:0;background-color:#9DD9F3"><br>
+<hr style="height:1px;border-width:0;background-color:#9DD9F3">
+<br>
+
+   <div class="main">
+  <center>
+	<div class="containerimg">
+      <img src="imgs/riya.jfif" style="width:225px;height:225px;">
+	  <div class="inbox">
+  <img src="imgs/blubg.jpg" style="width:225px;height:35px;">
+  <div class="centered"><h3>Riya Maheshwari</h3></div>
+</div>
+  </div>
+</div>
+	  </center>
+	  <b><p>Fashionopolis by Dana Thomas</p></b>
+      <p>Fashionopolis: The price of fast fashion and future of clothes by bestselling journalist Dana Thomas
+	  who has traveled the world to
+	  <span id="dots10">...</span><span id="more10">
+	  know about the fashion visionary, designer's innovation and companies who
+	  are crafting the future of sustainable technologies to redefine fashion. One of the most easy yet time-consuming
+	  question we ask frequently on a regular basis is, what should we wear and how would it look? Right, so
+	  from unfurling fast fasion, globalization, trend setters, to different inputs on innovation to the journey
+	  of fashion in Fashionopolis redefines the several changes and developments such as 3-D designs, denim processing,
+	  material tests etc. The book snaps straight onto unchecked labor to environmental abuse. Thomas asks
+	  to resist the fast fasion, as it is exploiting the right amount and quality, she also talk about the 
+	  vast amount of production at a lightning speed and then delivered to customers at a vague prospect. 
+	  It's alarming and one should reassess the fashion with broad perspective, from it's production, to design, to
+environemnt and quality.	  
+	  </span></p><button class ="buttonreadmore" onclick="myFunction10()" id="myBtn10">Read more</button>
+    
+<hr style="height:1px;border-width:0;background-color:#9DD9F3">
+<br>
+
+
  <div class="main">
   <center>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
 	<div class="containerimg">
-      <img src="imgs/vai.jfif" alt="Vaibhav" style="width:300px;height:300px;">
-	  <div class="text-block">
-    <h4>Vaibhav Agrawal</h4>
+      <img src="imgs/plain.png" style="width:225px;height:225px;">
+	 <div class="inbox">
+  <img src="imgs/blubg.jpg" style="width:225px;height:35px;">
+  <div class="centered"><h3>Aashray Mody</h3></div>
+</div>
   </div>
 </div>
-    </div>
-    <div class="flip-card-back">
-      <p>Book: Sunset</p> 
-      <p>Author: Chris Morry</p> 
 	  </center>
-      <p>As the title suggests, the book is all about <span id="dots">...</span><span id="more">
-	  the speculated theories of what probably could a good character and a good work can potentially achieve. 
-	  </span></p><button class ="buttonreadmore" onclick="myFunction()" id="myBtn">Read more</button>
-    </div>
-  </div>
-</div>
-</div>
-<hr style="height:1px;border-width:0;background-color:#9DD9F3"><br>
-
-<div class="main">
-
-  <center>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-	<div class="containerimg">
-      <img src="imgs/anir.jfif" alt="Anirudh" style="width:300px;height:300px;">
-	  <div class="text-block">
-    <h4>Anirudh More</h4>
-  </div>
-</div>
-    </div>
-    <div class="flip-card-back">
-      <p>Book: Moonrise</p> 
-      <p>Author: Durjoy</p> 
-	  </center>
-      <p>As the title suggests, the book is all about <span id="dots">...</span><span id="more">
-	  the speculated theories of what probably could a good character and a good work can potentially achieve. 
-	  </span></p><button class ="buttonreadmore" onclick="myFunction()" id="myBtn">Read more</button>
-    </div>
-  </div>
-</div>
-</div>
-<hr style="height:1px;border-width:0;background-color:#9DD9F3"><br>
-
+	   <b><p>Right Ho Jeeves by PG Wodehouse</p></b>
+      <p>‘What ho what ho what ho’ that’s the style of Bertie Wooster,
+	  just another marvellous creation by PG Wodehouse.<span id="dots3">...</span><span id="more3">
+	   Right ho Jeeves one of the finest books I could ever lay my hands on, the portrayal of a rich 
+	   English gentlemen whose penchant is to fall into trouble in numerous occasions always to be 
+	   rescued by his valet. Right Ho Jeeves set in the Brinkley manor the stately home of his aunt 
+	   Dahlia  who as described by Wooster carefully fixed coiffure" . 
+Bertram (Bertie) Wooster spent a lovely holiday in Cannes. Upon his return, he had the misfortune 
+to stumble straight into the following mess: a couple engaged to split up a couple in love with 
+each other but because of their... Yeah, hmm. The peculiarities (yes, this is the best word) are 
+unable to accept their feelings.
+"I have no doubt that by the hour, you could have flung bricks in England's most densely populated 
+districts without endangering the safety of a single girl capable of becoming Mrs. 
+Augustus Fink-Nottle without anaesthetics."
+Add to this the failure of his aunt Dahila’s to get money from her husband for her magazine to 
+replace her gambling loss, the need to make a speech for Market Snodsbury Grammar School awards, 
+the resignation of Aunt Dahlia's brilliant chief Anatole-and you will begin to get a glimpse of
+the insurmountable difficulties that Bertie was facing. Like a true warrior, he charged headlong
+ through all the troubles trying to untangle them. It was easy to guess the outcome of his efforts, 
+ but you can trust Wodehouse to come up with the most amusing ones all the time. In other words, 
+ the more Bertie tried the worse the mess got.
+A quote from the book which never fails to amuse me 
+“Jeeves, I'm engaged."
+"I hope you will be very happy, sir."
+"Don't be an ass. I'm engaged to Miss Bassett.”
+I have read books in the series each and everyone has impressed me however this book is my 
+favourite as the portrayal of Gussie fink nottle and Madeline Basset really tingle my bones. 
+	  </span></p><button class ="buttonreadmore" onclick="myFunction3()" id="myBtn3">Read more</button>
+    
+	
+<hr style="height:1px;border-width:0;background-color:#9DD9F3">
+<br>
 
 <div class="main">
   <center>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
 	<div class="containerimg">
-      <img src="imgs/divi.jpeg" alt="Divyanshu" style="width:300px;height:300px;">
-	  <div class="text-block">
-    <h4>Divyanshu Agarwal</h4>
+      <img src="imgs/raunak.jpg" style="width:225px;height:225px;">
+	 <div class="inbox">
+  <img src="imgs/blubg.jpg" style="width:225px;height:35px;">
+  <div class="centered"><h3>Raunak Jain</h3></div>
+</div>
   </div>
 </div>
-    </div>
-    <div class="flip-card-back">
-      <p>Book: Fallrise</p> 
-      <p>Author: Jordy</p> 
 	  </center>
-      <p>As the title suggests, the book is all about <span id="dots">...</span><span id="more">
-	  the speculated theories of what probably could a good character and a good work can potentially achieve. 
-	  </span></p><button class ="buttonreadmore" onclick="myFunction()" id="myBtn">Read more</button>
-    </div>
-  </div>
-</div>
-</div>
-<hr style="height:1px;border-width:0;background-color:#9DD9F3"><br>
-
-<div class="main">
-<center>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-	<div class="containerimg">
-      <img src="imgs/antri.jpeg" alt="Antriksh" style="width:300px;height:300px;">
-	  <div class="text-block">
-    <h4>Antriksh Tiwari</h4>
-  </div>
-</div>
-    </div>
-    <div class="flip-card-back">
-      <p>Book: Rishabh's Era</p> 
-      <p>Author: R Pant</p> 
-	  </center>
-      <p>As the title suggests, the book is all about <span id="dots">...</span><span id="more">
-	  the speculated theories of what probably could a good character and a good work can potentially achieve. 
-	  </span></p><button class ="buttonreadmore" onclick="myFunction()" id="myBtn">Read more</button>
-    </div>
-  </div>
-</div>
-</div>
-
-<hr style="height:1px;border-width:0;background-color:#9DD9F3"><br>
-<div class="main">
-<center>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-	<div class="containerimg">
-      <img src="imgs/yas.jfif" alt="Yash" style="width:300px;height:300px;">
-	  <div class="text-block">
-    <h4>Yash Dayal</h4>
-  </div>
-</div>
-    </div>
-    <div class="flip-card-back">
-      <p>Book: AmongUs</p> 
-      <p>Author: Asia Server</p> 
-	  </center>
-      <p>As the title suggests, the book is all about <span id="dots">...</span><span id="more">
-	  the speculated theories of what probably could a good character and a good work can potentially achieve. 
-	  </span></p><button class ="buttonreadmore" onclick="myFunction()" id="myBtn">Read more</button>
-    </div>
-  </div>
-</div>
-</div>
-<hr style="height:1px;border-width:0;background-color:#9DD9F3"><br>
-<div class="main">
-<center>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-	<div class="containerimg">
-      <img src="imgs/noel.jfif" alt="Noel" style="width:300px;height:300px;">
-	  <div class="text-block">
-    <h4>Noel David</h4>
-  </div>
-</div>
-    </div>
-    <div class="flip-card-back">
-      <p>Book: ZZZ</p> 
-      <p>Author: YYY</p> 
-	  </center>
-      <p>As the title suggests, the book is all about <span id="dots">...</span><span id="more">
-	  the speculated theories of what probably could a good character and a good work can potentially achieve. 
-	  </span></p><button class ="buttonreadmore" onclick="myFunction()" id="myBtn">Read more</button>
-    </div>
-  </div>
-</div>
-</div>
-
-<hr style="height:1px;border-width:0;background-color:#9DD9F3"><br>
-<div class="main">
-<center>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-	<div class="containerimg">
-      <img src="imgs/arih.jfif" alt="Arihant" style="width:300px;height:300px;">
-	  <div class="text-block">
-    <h4>Arihant Babel</h4>
-  </div>
-</div>
-    </div>
-    <div class="flip-card-back">
-      <p>Book: ABC</p> 
-      <p>Author: WWW</p> 
-	  </center>
-      <p>As the title suggests, the book is all about <span id="dots">...</span><span id="more">
-	  the speculated theories of what probably could a good character and a good work can potentially achieve. 
-	  </span></p><button class ="buttonreadmore" onclick="myFunction()" id="myBtn">Read more</button>
-    </div>
-  </div>
-</div>
-</div>
-<hr style="height:1px;border-width:0;background-color:#9DD9F3"><br>
-<div class="main">
-<center>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-	<div class="containerimg">
-      <img src="imgs/arh.jfif" alt="Arhant" style="width:300px;height:300px;">
-	  <div class="text-block">
-    <h4>Arhant Golcha</h4>
-  </div>
-</div>
-    </div>
-    <div class="flip-card-back">
-      <p>Book: PQR</p> 
-      <p>Author: DCB</p> 
-	  </center>
-      <p>As the title suggests, the book is all about <span id="dots">...</span><span id="more">
-	  the speculated theories of what probably could a good character and a good work can potentially achieve. 
-	  </span></p><button class ="buttonreadmore" onclick="myFunction()" id="myBtn">Read more</button>
-    </div>
-  </div>
-</div>
-</div>
-<hr style="height:1px;border-width:0;background-color:#9DD9F3"><br>
-
-<div class="main">
-<center>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-	<div class="containerimg">
-      <img src="imgs/kan.jfif" alt="Kanishk" style="width:300px;height:300px;">
-	  <div class="text-block">
-    <h4>Kanishk Tatiya</h4>
-  </div>
-</div>
-    </div>
-    <div class="flip-card-back">
-      <p>Book: BAK</p> 
-      <p>Author: ASD</p> 
-	  </center>
-      <p>As the title suggests, the book is all about <span id="dots">...</span><span id="more">
-	  the speculated theories of what probably could a good character and a good work can potentially achieve. 
-	  </span></p><button class ="buttonreadmore" onclick="myFunction()" id="myBtn">Read more</button>
-    </div>
-  </div>
-</div>
-</div>
-<hr style="height:1px;border-width:0;background-color:#9DD9F3"><br>
-<div class="main">
-<center>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-	<div class="containerimg">
-      <img src="imgs/mudit.jfif" alt="Mudit" style="width:300px;height:300px;">
-	  <div class="text-block">
-    <h4>Mudit Mansinghka</h4>
-  </div>
-</div>
-    </div>
-    <div class="flip-card-back">
-      <p>Book: MNO</p> 
-      <p>Author: JKL</p> 
-	  </center>
-      <p>As the title suggests, the book is all about <span id="dots">...</span><span id="more">
-	  the speculated theories of what probably could a good character and a good work can potentially achieve. 
-	  </span></p><button class ="buttonreadmore" onclick="myFunction()" id="myBtn">Read more</button>
-    </div>
-  </div>
-</div>
-</div>
-<hr style="height:1px;border-width:0;background-color:#9DD9F3"><br>
-<div class="main">
-<center>
-<div class="flip-card">
- <div class="flip-card-inner">
-    <div class="flip-card-front">
-	<div class="containerimg">
-      <img src="imgs/vihan.jfif" alt="Vihan" style="width:300px;height:300px;">
-	  <div class="text-block">
-    <h4>Vihan Singhai</h4>
-  </div>
-</div>
-    </div>
-    <div class="flip-card-back">
-      <p>Book: NOY</p> 
-      <p>Author: FGH</p> 
-	  </center>
-      <p>As the title suggests, the book is all about <span id="dots">...</span><span id="more">
-	  the speculated theories of what probably could a good character and a good work can potentially achieve. 
-	  </span></p><button class ="buttonreadmore" onclick="myFunction()" id="myBtn">Read more</button>
-    </div>
-  </div>
-</div>
-</div>
-<hr style="height:1px;border-width:0;background-color:#9DD9F3"><br>
-
-  </div>
+	  <b><p>A Tale of Two Cities by Charles Dickens</p></b>
+      <p>One of the best ever published novels. I've never seen a ranking that this novel didn't have. If you've ever
+	  <span id="dots6">...</span><span id="more6">
+	  wondered what it would be like to live through the French Revolution, read this book. You feel the rage,
+	  the hopelessness, the vulnerability, and most of all, the fear that enveloped everyone through Dickens'
+	  words. Reading this masterpiece was a joy and a privilege.I instantly decided after reading this that 
+	  I would plan to read the remaining Dickens books . I was completely fascinated by his characters who 
+	  came to life for me immediately and whose hopes and fears I found myself really caring for. Equally 
+	  amazing was the plotting and overall story-telling skill of Dickens that I felt was masterful. Dickens 
+	  writing conveyed the passions and turmoil of the French Revolution.
+	  It was an era of great change and great danger at the time of the French Revolution. It was a time when 
+	  a thirst for revenge encountered injustice, and never was a distinction made between the innocent and 
+	  the guilty. Dickens' great tale of unsurpassed adventure and bravery unfolds against this turbulent 
+	  historical background. Dr. Alexandre Manette, unjustly imprisoned for 18 years in the Bastille, is 
+	  reunited with his daughter, Lucie, and transported safely from France to England.It would seem that 
+	  in peace they could pick up the threads of their lives. However as luck would have it, the pair are 
+	  called to the Old Bailey to testify against a young Frenchman wrongly accused of treason, Charles Darnay.
+	  Oddly enough, Darnay bears an uncanny similarity to another man in the courtroom, Sydney Carton, 
+	  the dissolute lawyer's clerk. It is a coincidence that saves Darnay more than once from certain doom.
+	  The book is beautifully plotted and rich in suspense, romance, and heroism  that culminate in a daring 
+	  prison escape in the shadow of the guillotine.
+	  </span></p><button class ="buttonreadmore" onclick="myFunction6()" id="myBtn6">Read more</button>
   
+
+<hr style="height:1px;border-width:0;background-color:#9DD9F3">
+<br>
+
+ <div class="main">
+  <center>
+	<div class="containerimg">
+      <img src="imgs/vai.jfif" style="width:225px;height:225px;">
+<div class="inbox">
+  <img src="imgs/blubg.jpg" style="width:225px;height:35px;">
+  <div class="centered"><h3>Vaibhav Agarwal</h3></div>
 </div>
+  </div>
+</div>
+	  </center>
+	    <b><p>Mine by Alisha Mor</p></b>
+      <p>We never value people when we have them, but the moment they leave our lives, they become the most 
+	  <span id="dots1">...</span><span id="more1">
+	 valuable. This is the message that I got from this book. It is a teen fiction, set in California, with 
+	 a light hearted romance and a tad bit of humour. This book will take you on a rollercoaster ride filled
+	 with emotions where you'll be confused whether to laugh or cry. It's an emotional upheaval but oh so satisfying.
+	  </span></p><button class ="buttonreadmore" onclick="myFunction1()" id="myBtn1">Read more</button>
+
+ <hr style="height:1px;border-width:0;background-color:#9DD9F3">
+<br>
+
+ <div class="main">
+  <center>
+	<div class="containerimg">
+      <img src="imgs/anir.jfif" style="width:225px;height:225px;">
+	 <div class="inbox">
+  <img src="imgs/blubg.jpg" style="width:225px;height:35px;">
+  <div class="centered"><h3>Anirudh More</h3></div>
+</div>
+  </div>
+</div>
+	  </center>
+	  <b><p>Accidentally Wes Anderson by Wally Koval</p></b>
+      <p>Having followed his work on Instagram for quite a while, I couldn't wait to get
+	  <span id="dots4">...</span><span id="more4"> the book. 
+	  It's a great visual resource, full of lovely photography and fascinating details and stories 
+	  of some awesome spots around the globe. Inspiring, full of places you'll want to go and visit, 
+	  and a brilliant visual resource and reference. If you are a fan of a Wes Anderson film, then 
+	  you definitely need this book. Accidentally Wes Anderson tells the stories behind more than 
+	  200 of the most delightful and fascinating spots on Earth. This book, approved by Wes Anderson
+	  himself is perfect for modern travelers and fans of Wes Anderson's distinctive aesthetic, this 
+	  is an invitation to look at your world through a different lens. 
+	  </span></p><button class ="buttonreadmore" onclick="myFunction4()" id="myBtn4">Read more</button>
+    
+
+<hr style="height:1px;border-width:0;background-color:#9DD9F3">
+<br>
+
+<div class="main">
+  <center>
+	<div class="containerimg">
+      <img src="imgs/keshav.jpeg" style="width:225px;height:225px;">
+	 <div class="inbox">
+  <img src="imgs/blubg.jpg" style="width:225px;height:35px;">
+  <div class="centered"><h3>Keshav Akolkar</h3></div>
+</div>
+  </div>
+</div>
+	  </center>
+	  <b><p>Rusty and the Magic Mountain by Ruskin Bond</p></b>
+      <p> Rusty and his friends Pitamber and Popat find adventure in no small measure when they set out
+	  to climb a mysterious mountain
+	  <span id="dots7">...</span><span id="more7"> 
+	  steeped in legend and superstition. On their way they shelter in a haunted rest house, encounter a 
+	  tiger and experience a hilarious mule ride, which takes them to the palace of a mad rani.
+Ruskin Bond returns with a brand-new Rusty adventure after more than a decade. A rollicking tale of 
+humour and enchantment, Rusty and the Magic Mountain will win the much-loved character of Rusty a 
+whole new band of followers. It's a great book for everyone. A must read.
+Well I'm not a bookish person who loves to read. But this book is something else.A person who has never 
+read a single book will also love this one. 
+So let me be clear when you start reading this book you feel like you've  entered a different world. 
+Each and everything that happens in the book you feel like you're present there. Personally I am very 
+pleased by the way the author writes.
+When you start reading this book you also start to develop a curiosity about what happens next. 
+This curiosity makes you feel to read the book and you don't get bored by it. Basically the book is 
+divided into chapters and each one is interconnected by another.
+	  </span></p><button class ="buttonreadmore" onclick="myFunction7()" id="myBtn7">Read more</button>
+    </div>
+
+<hr style="height:1px;border-width:0;background-color:#9DD9F3">
+<br>
+
+<div class="main">
+  <center>
+	<div class="containerimg">
+      <img src="imgs/sujay.jpg" style="width:225px;height:225px;">
+	 <div class="inbox">
+  <img src="imgs/blubg.jpg" style="width:225px;height:35px;">
+  <div class="centered"><h3>Sujay Bhujbal</h3></div>
+</div>
+  </div>
+</div>
+	  </center>
+	  <b><p>The Alchemist by Paulo Coelho</p></b>
+      <p> Rusty and his friends Pitamber and Popat find adventure in no small measure when they set out
+	  to climb a mysterious mountain
+	  <span id="dots9">...</span><span id="more9"> 
+	  steeped in legend and superstition. On their way they shelter in a haunted rest house, encounter a 
+	  tiger and experience a hilarious mule ride, which takes them to the palace of a mad rani.
+Ruskin Bond returns with a brand-new Rusty adventure after more than a decade. A rollicking tale of 
+humour and enchantment, Rusty and the Magic Mountain will win the much-loved character of Rusty a 
+whole new band of followers. It's a great book for everyone. A must read.
+Well I'm not a bookish person who loves to read. But this book is something else.A person who has never 
+read a single book will also love this one. 
+So let me be clear when you start reading this book you feel like you've  entered a different world. 
+Each and everything that happens in the book you feel like you're present there. Personally I am very 
+pleased by the way the author writes.
+When you start reading this book you also start to develop a curiosity about what happens next. 
+This curiosity makes you feel to read the book and you don't get bored by it. Basically the book is 
+divided into chapters and each one is interconnected by another.
+	  </span></p><button class ="buttonreadmore" onclick="myFunction9()" id="myBtn9">Read more</button>
+    </div>
+
+<hr style="height:1px;border-width:0;background-color:#9DD9F3">
+<br>
 
 <div class= "footsection">
 <center>
@@ -574,7 +577,7 @@ and name of the author along with the reviews.
 	<a href="mailto:soulwaybysarvesh@gmail.com" target="_blank">
 	<i class="fa fa-envelope-square fa-2x social" style="color: #262626"></i></a>
 	
-	<p style="font-family: Arial";> &copy; SoulWay, 2020</p>
+	<p style="font-family: Livvic";> &copy; SoulWay, 2020</p>
 	</center>
 	
 <b><i>Disclaimer:</b></i><br>
@@ -583,6 +586,9 @@ The information and design that is being presented or used are veracious to my k
 Any kind of similarity is purely coincidental. 
 The content is subject to change and should not be constructed as a commitment. 
 	</div>
+
+
+</body>
 
 	
 <script>
@@ -600,9 +606,7 @@ for (i = 0; i < coll.length; i++) {
     } 
   });
 }
-</script>
 
-<script>
 function myFunction1() {
   var dots = document.getElementById("dots1");
   var moreText = document.getElementById("more1");
@@ -634,7 +638,138 @@ function myFunction2() {
     moreText.style.display = "inline";
   }
 }
+
+
+function myFunction3() {
+  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction4() {
+  var dots = document.getElementById("dots4");
+  var moreText = document.getElementById("more4");
+  var btnText = document.getElementById("myBtn4");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction5() {
+  var dots = document.getElementById("dots5");
+  var moreText = document.getElementById("more5");
+  var btnText = document.getElementById("myBtn5");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction6() {
+  var dots = document.getElementById("dots6");
+  var moreText = document.getElementById("more6");
+  var btnText = document.getElementById("myBtn6");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction7() {
+  var dots = document.getElementById("dots7");
+  var moreText = document.getElementById("more7");
+  var btnText = document.getElementById("myBtn7");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction8() {
+  var dots = document.getElementById("dots8");
+  var moreText = document.getElementById("more8");
+  var btnText = document.getElementById("myBtn8");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction9() {
+  var dots = document.getElementById("dots9");
+  var moreText = document.getElementById("more9");
+  var btnText = document.getElementById("myBtn9");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+
+function myFunction10() {
+  var dots = document.getElementById("dots10");
+  var moreText = document.getElementById("more10");
+  var btnText = document.getElementById("myBtn10");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
 </script>
 
-</body>
+
 </html>
