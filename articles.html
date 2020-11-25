@@ -137,7 +137,9 @@
 #more4 {display: none;}  
 #more5 {display: none;}   
 #more6 {display: none;}   
+#more7 {display: none;}   
 
+  
 .buttonreadmore {
   background-color: #fde3c6;
   border: 1px solid black;
@@ -152,7 +154,6 @@
   font-family: Livvic;
   font-weight: bold;
 }  
-
 
 img.a {
   vertical-align: 50%;
@@ -207,16 +208,36 @@ Spread positivity? Want to inspire others through articles?</span>
     <p id="borderimg1">
   <b> <span style="font-size: 18px;"><u>Petals of Struggle</u></b></span> <br>by Anny S.<br>
    <span id="dots5"></span><span id="more5">
-   content
+   I wonder what if we get everything we desire... without struggle, without hard work, without challenges, 
+   and without sacrifices; some of us might take it as gold-born great but you would be weak, you won't be able
+   to showcase strength when the hard times come, when life disdains, and you would be fighting it without
+   knowing your strength, and said so you won't be able to grow without resistance. If you never had failures,
+   disappointments, setbacks, you won't come to know the true meaning of potential, courage, and compassion because 
+   these attributes are fired up when you see through how you grown through the struggle.
+   Don't curse the skies if you you go through tough world or struggling times, rather capitalize the opportunity
+   to thrive, and inspire others through it. You'll survive whatever is next. Next is a lesson. It'll make you
+   stronger, it will teach you patience, it'll showcase your spirit. You came with a purpose, you'll find it if 
+   you are committed to keep going. Your struggle is a chapter of your story. <br>
+  <b> Pluck the petals of struggle,<br> The life would envy to blossom you and <br>
+   Don't worry, if you pick a thorn;<br> Remember, the thorny stem.. later on<br>
+   produces the most magical roses.</b>
+   
   </span>
   <br><button class ="buttonreadmore" onclick="myFunction5()" id="myBtn5">Read now</button></p>
+<br>
+  
+      <p id="borderimg1">
+  <b> <span style="font-size: 18px;"><u>Petals of Struggle</u></b></span> <br>by Anny S.(2)<br>
+   <span id="dots7"></span><span id="more7">
+   content
+  </span>
+  <br><button class ="buttonreadmore" onclick="myFunction7()" id="myBtn7">Read now</button></p>
 <br>
   
   <p id="borderimg1">
   <b> <span style="font-size: 18px;"><u>Procrastinating the Procrastination</u></b></span> 
   <br>by Shourya Rohilla<br>
    <span id="dots1"></span><span id="more1">
-
    The thing about humans is that they want rest. They require rest when they feel they are tired,
    which is no doubt true. But many a times we think we are tired when we have just done a little 
    to no work. And then we take rest. This doesn't help as it becomes a habit. 
@@ -356,6 +377,8 @@ He regarded his work on India’s nuclear weapons programme as a way to assert I
 	<i class="fa fa-twitter-square fa-2x social" style="color: #262626"></i></a>  
     <a href="https://www.linkedin.com/in/sarveshwinsome/" target="_blank">
 	<i class="fa fa-linkedin-square fa-2x social" style="color: #262626"></i></a>
+	<a href="https://medium.com/@saarveshannyy" target="_blank">
+	<i class="fa fa-medium fa-2x social" style="color: #262626"></i></a>
 	<a href="mailto:soulwaybysarvesh@gmail.com" target="_blank">
 	<i class="fa fa-envelope-square fa-2x social" style="color: #262626"></i></a>
 	
@@ -472,6 +495,22 @@ function myFunction6() {
   var dots = document.getElementById("dots6");
   var moreText = document.getElementById("more6");
   var btnText = document.getElementById("myBtn6");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read now"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Done"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction7() {
+  var dots = document.getElementById("dots7");
+  var moreText = document.getElementById("more7");
+  var btnText = document.getElementById("myBtn7");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
