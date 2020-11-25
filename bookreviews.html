@@ -137,7 +137,7 @@
 #more12 {display: none;} 
 #more13 {display: none;} 
 #more14 {display: none;} 
-
+#more15 {display: none;} 
   
 .buttonreadmore {
   background-color: #005580;
@@ -338,6 +338,37 @@ The narrative starts from Sachin's childhood and travels through his glorious mo
 	  </span></p><button class ="buttonreadmore" onclick="myFunction11()" id="myBtn11">Read more</button>
 
  <hr style="height:1px;border-width:0;background-color:#9DD9F3">
+<br>
+
+<div class="main">
+  <center>
+	<div class="containerimg">
+      <img src="imgs/bhavya.jpeg" style="width:125px;height:125px;">
+	 <div class="inbox">
+  <img src="imgs/blubg.jpg" style="width:125px;height:25px;">
+  <div class="centered"><h5>Bhavya Sinha</h5></div>
+</div>
+  </div>
+</div>
+	  </center>
+	  <center><h4>Book - <u>Personality Plus</u><br>by Florence L.</h4></center>
+      <p> If you have ever found yourself wondering why do people behave the way they do, then
+	  <span id="dots15">...</span><span id="more15"> 
+	  I have a book for you! Personality Plus by Florence L. is filled with knowledge wrapped in funny and 
+	  relatable stories. The idea embraced in this book is self awareness. Only when you know yourself can 
+	  you attempt to understand another. 
+It sums up personalities into 4 types: Sanguine, Melancholy, Choleric and Phlegmatic and you could be one or 
+a combination of these. To help you discover which category you fit into, there is a self assessment test at 
+the beginning. The book then goes into the details of each personality types and further into the strengths 
+and weaknesses of each. To see myself and others from a third perspective, which was all about acceptance 
+and genuine understanding helped me strengthen my relationship with myself as well as the people around me. 
+Lastly, if you think this is just a plain old self help book everyone swears by, then you'd be surprised by
+ its accuracy and the quirky examples this book is based on. Get ready to be surprised by the amount of times
+ you gasp "Me Too!"
+	  </span></p><button class ="buttonreadmore" onclick="myFunction15()" id="myBtn15">Read more</button>
+    </div>
+
+<hr style="height:1px;border-width:0;background-color:#9DD9F3">
 <br>
 
 
@@ -942,6 +973,22 @@ function myFunction14() {
   var dots = document.getElementById("dots14");
   var moreText = document.getElementById("more14");
   var btnText = document.getElementById("myBtn14");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction15() {
+  var dots = document.getElementById("dots15");
+  var moreText = document.getElementById("more15");
+  var btnText = document.getElementById("myBtn15");
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
