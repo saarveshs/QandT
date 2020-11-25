@@ -136,6 +136,7 @@
 #more11 {display: none;} 
 #more12 {display: none;} 
 #more13 {display: none;} 
+#more14 {display: none;} 
 
   
 .buttonreadmore {
@@ -477,6 +478,42 @@ outdone herself with this trilogy and a very recent addition of the trilogy’s 
  <div class="main">
   <center>
 	<div class="containerimg">
+      <img src="imgs/noel.jfif" style="width:125px;height:125px;">
+<div class="inbox">
+  <img src="imgs/blubg.jpg" style="width:125px;height:25px;">
+  <div class="centered"><h5>Noel David</h5></div>
+</div>
+  </div>
+</div>
+	  </center>
+		<center><h4>Book - <u>Who Moved My Cheese?</u><br>by Spencer Johnson </h4></center>
+      <p> The book follows the lives of four main characters, 2 mice Sniff and Scurry and 2 men 
+	  <span id="dots14">...</span><span id="more14">
+ (for convenience they are as small as the mice) Hem and Haw. Now, other than their size, all four love cheese 
+ and must find that cheese which is hidden throughout in a large maze. The mice have a simple strategy, they 
+ just search the paths until they find the cheese. The humans on the other hands, are more prideful and believe 
+ they are superior to the mice. 
+One day, they hit the motherload of cheese! it was enough for them to last a lifetime! The men become attached
+ to all the cheese, becoming arrogant, while the mice are ever aware and constantly check if the supply gets smaller. 
+But the cheese runs out.
+The mice foresee this and move on, back to searching and discovering new paths. The men on the other hand are 
+gravely disappointed. “How could the cheese do this to us” they feel, “We deserved more cheese”. They still wait
+ for the cheese to come back, but to no avail. 
+Haw decided to stop waiting and wasting, but Hem was still not ready. So, Haw sets out on this own, as soon he 
+finds new cheese! At a new place, not the same quantity but it was progress. Haw keeps exploring and experiences
+ new situations, overcomes his fear and moves forward, which Hem failed to do. Learning from his past mistakes, 
+ he monitors the cheese and is ready like the mice to move on once the cheese runs out. He positively adapts to change.
+This simple yet brilliant analogy, speaks to us in a more personal way. We cling on, refuse to accept what has 
+been done and fear to look forward. Sometimes, even God’s smallest creations, the mice can teach us a thing or 
+two – anticipate, monitor, adapt and lastly - enjoy the change. 
+	  </span></p><button class ="buttonreadmore" onclick="myFunction14()" id="myBtn14">Read more</button>
+
+ <hr style="height:1px;border-width:0;background-color:#9DD9F3">
+<br>
+ 
+ <div class="main">
+  <center>
+	<div class="containerimg">
       <img src="imgs/vai.jfif" style="width:125px;height:125px;">
 <div class="inbox">
   <img src="imgs/blubg.jpg" style="width:125px;height:25px;">
@@ -510,10 +547,12 @@ outdone herself with this trilogy and a very recent addition of the trilogy’s 
 		<center><h4>Book - <u>Rich Dad Poor Dad</u><br>by Robert Kiyosaki and S. Lechter</h4></center>
       <p>In this book, Rich dad Poor dad, Robert Kiyosaki talks about his two dads; one his biological and 
 	  <span id="dots13">...</span><span id="more13">
- other his friends dad. He considers his father as poor dad because he works on a 9-5 job and has only one source of income. While his friends' dad is 
-	      considered a rich because he makes money from multiple sources and  makes money work for him, even though he is a college dropout. 
-This book teaches a very important part of living that everyone should understand i.e. financial literacy. As in our education system we are never taught 
-	      investments and how to multiply our assets by investing it and taking calculated risks.
+ other his friends dad. He considers his father as poor dad because he works on a 9-5 job and has only one 
+ source of income. While his friends' dad is considered a rich because he makes money from multiple sources 
+ and  makes money work for him, even though he is a college dropout. 
+This book teaches a very important part of living that everyone should understand i.e. financial literacy.
+ As in our education system we are never taught investments and how to multiply our assets by investing it 
+ and taking calculated risks.
 
 	  </span></p><button class ="buttonreadmore" onclick="myFunction13()" id="myBtn13">Read more</button>
 
@@ -898,6 +937,23 @@ function myFunction13() {
     moreText.style.display = "inline";
   }
 }
+
+function myFunction14() {
+  var dots = document.getElementById("dots14");
+  var moreText = document.getElementById("more14");
+  var btnText = document.getElementById("myBtn14");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
 
 </script>
 
