@@ -12,7 +12,7 @@
 
 .header {
   overflow: hidden;
-  background-color: #E7D981;
+  background-color: #ebe094;
   padding: 20px 10px;
 }
 
@@ -65,7 +65,7 @@
 
 .footsection
 {
-	background-color: #E7D981;
+	background-color: #ebe094;
 	color: #262626;
 	text-align: justify;
 	width:100%;
@@ -100,14 +100,14 @@
 #borderimg1 { 
   border: 7px solid transparent;
   padding: 5px;
-  border: 4px solid #E7D981;
+  border: 4px solid #ebe094;
     border-style: double;
 }
 
 #borderimg2 { 
   border: 7px solid transparent;
   padding: 5px;
-  border: 4px solid #e7d981;
+  border: 4px solid #ebe094;
   border-style: double;
 }
 
@@ -152,6 +152,57 @@ img {vertical-align: middle;}
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
+}
+
+.notification {
+  background-image:url(imgs/bellgoldy.png);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px 12px;
+  width: 270px;
+  height: 130px;
+  position: relative;
+  display: inline-block;
+  border-radius: 3px;
+  animation: blink 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.25;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.notification .badge {
+  position: absolute;
+  top: -25px;
+  right: -15px;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 50%;
+  background-color: #ebe094;
+  color: black;
+  border: 1px solid black;
+}
+
+.buttonsty {
+  padding: 8px 8px;
+  font-size: 18px;
+  font-family:Livvic;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #262626;
+  background-color: #f3edbf;
+  border-radius: 12px;
 }
 
 </style>
@@ -209,8 +260,14 @@ img {vertical-align: middle;}
   <span class="dot"></span> 
   <span class="dot"></span> 
 </div>
-</center>	
+<br>	
 
+
+<button class="buttonsty" onclick="typeWriter()"><b>Magic Quote of the Week</b></button><p id="demo"></p>
+
+<p id="demoz"></p>
+  </center>
+  
 	<span class="text">
 	 <p id="borderimg1"> 
 	 We know how busy we have been in our lives; trying to focus on the exceptional dreams with mediocre efforts 
@@ -228,7 +285,15 @@ img {vertical-align: middle;}
 	So, through all the chaotic art, all the playful pain, all the numb tears, all the dark nights,
 	all the unsuccessful stories; meanwhile in the process, <br>
 	<b> A LITTLE WARRIOR WAS MADE.</b><br>
-	
+		<center>
+		<br>
+<div class="containerimg">
+      <a href="newyeargear.html" class="notification">
+  <span class="badge">2021</span>
+</a>
+  </div>
+  <br>
+
 	<div style="background-color: #f3edbf"><b><center>
 	We encourage you to send your content in course of 
 	book reviews and articles. We'll post them for you. On a light note, we would be highly obliged 
@@ -240,9 +305,9 @@ img {vertical-align: middle;}
 	
 	<center>
 		<img src="imgs/stw.gif" width="325px" height="325px"><br>
-		  <hr style="height:1px;border-width:0;background-color:#E7D981">
+		  <hr style="height:1px;border-width:0;background-color:#ebe094">
   <br>
-    <img src="imgs/rewardeey.png" width="325px" height="325px" onclick="alert('Go to - Book Reviews and Articles')">
+    <img src="imgs/rewardeey.png" width="325px" height="325px" onclick="alert('Go to - Book Reviews and Articles')" >
 	</center>
   
 </div>
@@ -271,6 +336,51 @@ The content is subject to change and should not be constructed as a commitment.
 </body>
 
 <script>
+
+var NumberOfWords = 20
+
+var words = new BuildArray(NumberOfWords)
+
+// Use the following variables to 
+// define your random words:
+words[1] = "escapology"
+words[2] = "brightwork"
+words[3] = "verkrampte"
+words[4] = "protectrix"
+words[5] = "nudibranch"
+words[6] = "grandchild"
+words[7] = "newfangled"
+words[8] = "flugelhorn"
+words[9] = "mythologer"
+words[10] = "pluperfect"
+words[11] = "jellygraph"
+words[12] = "quickthorn"
+words[13] = "rottweiler"
+words[14] = "technician"
+words[15] = "cowpuncher"
+words[16] = "middlebrow"
+words[17] = "jackhammer"
+words[18] = "triphthong"
+words[19] = "wunderkind"
+words[20] = "dazzlement"
+
+
+function BuildArray(size){
+this.length = size
+for (var i = 1; i <= size; i++){
+this[i] = null}
+return this
+}
+
+function PickRandomWord(frm) {
+// Generate a random number between 1 and NumberOfWords
+var rnd = Math.ceil(Math.random() * NumberOfWords)
+
+// Display the word inside the text box
+frm.WordBox.value = words[rnd]
+}
+
+
 var slideIndex = 0;
 showSlides();
 
@@ -289,6 +399,18 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 2500); // Change image every 2 seconds
+}
+
+var i = 0;
+var txt = 'Look up to the ones who have the courage to follow their path! Why? - because it is rare. Why? - because most people desire to achieve the same.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demoz").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
 }
 </script>
 
