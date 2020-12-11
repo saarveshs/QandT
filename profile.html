@@ -158,6 +158,35 @@ a {
 .closebtn:hover {
   color: grey;
 }
+
+.containerimg {
+  position: relative;
+}
+
+
+.btnsty {
+  padding: 8px 8px;
+  font-size: 16px;
+  font-family:Livvic;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: silver;
+  background-image:url(imgs/blkros.gif);
+  border-radius: 10px;
+}
+
+.wordbox {
+    display: block;
+    width: 250px;
+    height: 30px;
+    font-size: 16px;
+    text-align: center;
+    background: #fff;
+    border-radius: 4px;
+    color: #black;
+    transition: 1s linear;
+}
 </style>
 </head>
 <body style="font-family:Livvic;">
@@ -179,6 +208,10 @@ a {
 	
   </div>
 </div>
+<div style="overflow:auto">
+
+
+  <div class="main">
 <br>
 <div class="card">
   <img src="imgs/authorprofile.png" alt="Author" width="100%" height="100%">
@@ -187,6 +220,22 @@ a {
   
   <p><a href="mailto:soulwaybysarvesh@gmail.com"><button>Contact</button></a></p>
 </div>
+<hr style="height:1px;border-width:0;background-color:#bfbfbf">
+<br>
+
+<center>
+  	<FORM NAME="WordForm">  
+<INPUT TYPE=TEXT NAME="WordBox" class="wordbox">
+
+<INPUT TYPE=BUTTON VALUE="Don't forget to generate" class="btnsty" onClick="PickRandomWord(document.WordForm);">
+</FORM>
+
+<br><br>
+<div class="containerimg">
+      <img src="imgs/feedback.png" style="width:150px;height:150px;"><br>Scan now to give your feedback
+  </div>
+  </center>
+<br>
 
 	<div class="callout">
   <div class="callout-header">Inquiry</div>
@@ -197,7 +246,7 @@ a {
   </div>
 </div>
 
-
+</div></div>
 <div class= "footsection">
 <center>
     <a href="https://twitter.com/saarvesh_qandt" target="_blank">
@@ -220,4 +269,50 @@ The content is subject to change and should not be constructed as a commitment.
 	</div>
 
 </body>
+<script>
+
+var NumberOfWords = 20
+
+var words = new BuildArray(NumberOfWords)
+
+// Use the following variables to 
+// define your random words:
+words[1] = "Choose to shine your efforts"
+words[2] = "Don't you dare to give up"
+words[3] = "Spark is one hot start"
+words[4] = "Get stuck with innocence"
+words[5] = "Make yourself proud"
+words[6] = "Keep the momentum going"
+words[7] = "Push your so called limits"
+words[8] = "Preparation be dope"
+words[9] = "It's paradise in bliss"
+words[10] = "Hope to win the risk"
+words[11] = "Untie the demolishing string"
+words[12] = "Your charm is a story"
+words[13] = "Improve and rise - repeat"
+words[14] = "Gear up your savage"
+words[15] = "Don't be afraid to start"
+words[16] = "Hold yourselves ahead"
+words[17] = "Carry your positivity"
+words[18] = "Pull your efforts closer"
+words[19] = "You are stronger 'fullstop'"
+words[20] = "Time to appreciate yourself"
+
+
+function BuildArray(size){
+this.length = size
+for (var i = 1; i <= size; i++){
+this[i] = null}
+return this
+}
+
+function PickRandomWord(frm) {
+// Generate a random number between 1 and NumberOfWords
+var rnd = Math.ceil(Math.random() * NumberOfWords)
+
+// Display the word inside the text box
+frm.WordBox.value = words[rnd]
+}
+</script>
+
 </html>
