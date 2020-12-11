@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Year Gear</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Livvic' rel='stylesheet'>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  overflow: hidden;
+  background: linear-gradient(to right, #ffcccc 0%, #993366 100%);
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-size: 16px; 
+  line-height: 2px;
+  border-radius: 4px;
+}
+
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: #262626;
+  color: #d9d9d9;
+}
+
+.header-right {
+  float: right;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+.main {
+  float: center;
+  width: 100%;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.footsection
+{
+	background: linear-gradient(to bottom, #993366 0%, #ffcccc 100%);
+	color: #262626;
+	text-align: justify;
+	width:100%;
+	padding: 10px;
+}
+
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+	align: center;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+   .main {
+    width: 100%;
+  }
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #ff80aa;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 7px 7px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 60px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 15px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 0%;
+  }
+}
+.containercountdown {
+  position: relative;
+  text-align: center;
+  color:#b30059;
+  font-size:20px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</style>
+</head>
+<body style="font-family: Livvic;">
+
+<center>
+<div style="background-image:url(imgs/stars.gif); background-size: cover; color: #b3b3b3; padding:15px;">
+  <h1>SoulWay</h1>
+  <h3>All about smiles and courage</h3>
+</div>
+</center>
+
+<div class="header">
+
+  <div class="header-left">
+ 
+    <a class="active" href="index.html">Back</a>
+	
+  </div>
+</div>
+
+<div style="overflow:auto">
+  <div class="main">
+  
+   <center><img src="imgs/tryny.gif" style="width:100%;"></center>
+
+<div style="font-size: 14px;background: linear-gradient(to left, #ffcccc 0%, #993366 100%);">
+    
+  <div class="timeline">
+
+  <div class="container left">
+    <div class="content">
+      <h3>2021 - <del>Giving up?</del> <ins>Never</ins></h3>
+      <p>Mind control is the biggest difference between what could be done just for a moment and what could be
+	  done consistently over and over again, till you and your goals are satisfied. Similar consistency is
+	  indulged when you're in the process of achieving something, it's the spirit that accustoms your never ending efforts.
+	  You may probably fall many times but you would definitely succeed 'sooner' or 'later', now here 'sooner' 
+	  is reached by staying consistent and never ever giving up, no matter what!
+	  </p>
+	  </div>
+  </div>
+    <div class="container right">
+    <div class="content">
+      <h3>2021 - High-5 to Positivity</h3>
+      <p>There are two surreal and unreal friends which you come across throughout your life. 
+	  One is the positive aspect of everything and other is the one which doesn't let you practice the positive aspect. 
+Building relationship with the positive aspects is one of the most precious practice that you have 
+to follow in this every passing minute. Landing your thinking in a positive process is far better than anything
+which destroys your self-confidence. Challenges, hard times and struggles are the part of the process, you have to
+stick your efforts together and give a 'smashing high-5 to the positivity' and leave the other baffling process aside.
+As you can note, I haven't used the word 'negativity', oh yes! as I mentioned, there shall be no role of it in our lives.
+	  
+	  </p>
+	  </div>
+  </div>
+   <div class="container left">
+    <div class="content">
+      <h3>2021 - Out of Comfort</h3>
+      <p>We have to start being honest with ourselves about what we want and take chances instead of making excuses.
+	  In the preparation to reach success, we need to sacrifice our comfort zone and then think about reaching milestones.
+	  Challenge your ability, gain courage and step outside your comfort zone. See, think,
+	  and feel where you stand right now and simultaneously assess how you're helping yourselves.</p> 
+	  </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h3>2021 - Inspired to Inspire</h3>
+      <p>Nobody wants to hear the story of people who were given everything readily, people want to hear the story of
+	 the persons who endured pain, faced the hard times, conquered the challenges, or the ones who transformed
+the word struggle into 'inspiring success stories'. It's all about battling tough with tough. The success stories and sense of encouragement
+are well defined for wiring the brain with the source of inspiration and then repeating the process.
+Get inspired to inspire your path. Get inspired to inspire others through it.
+People dignify the glory of your efforts with your journey. Show them the way.
+	  </p></div>
+  </div>
+ 
+    <div class="container left">
+    <div class="content">
+      <h3>2021 - One New Thing</h3>
+      <p>Dedicate the important 15 minutes of your day in learning one new thing, be it as simple as correctly pronouncing
+	  some messy words to the high advancements in some knowledge, or anything which drives your zeal. Just make 
+	  sure you held on to the process of either learning or implementing a few new things, it would not only
+	  help you feel the crucial happiness of accomplishment but also provides you an edge over the lost confidence.
+</p>	 
+ </div>
+  </div>
+<div class="container right">
+    <div class="content">
+      <h3>2021 - Search for Answers</h3>
+      <p>Seeking answers with cluttered mind is similar to seeking answers without identifying problem.
+	  Don't limit off options right in the beginning. Keeping a broad perspective would help you to look at the answers
+	  at several angles, so start pursuing what people merely just talk about and then forget to take action.
+	  It is as simple as asking correct questions to find the right answers. The game lies in identifying the 
+	  potential and courage you showcase to keep going.
+	  </p>
+	  </div>
+  </div>
+    <div class="container left">
+    <div class="content">
+      <h3>2021 - Habits are Pro Bro</h3>
+      <p>Feeling sorry about your failures has to be rectified by inculcating good habits. Habits are dependable 
+	  actions that bring out avid ways of doing things in a right way. Habits integrate your learnings, skills
+	  and goals altogether. Every little matter has a scope of processing good habits and procure excellence.
+	  Inspiration is what drives your enthusiasm to achieve something and habits are the force that keeps you going.
+	  </p>
+	  </div>
+  </div>
+   <div class="container right">
+    <div class="content">
+      <h3>2021 - Shield your Health</h3>
+      <p>Health is the harmony of intimately interconnected force in terms of body, focus, confidence and spirit.
+	  Meditation, physical activity, yoga, exercises, and healthy diet promote more control over mind and body.
+	  Even a sad soul could come lively when you really try hard to be in that peace of mind, and that's where shielding
+	  your good health is always an extra advantage. Push your limits, self-control is the base of shielding your 
+	  health followed by self-belief which anticipates the continuity of discipline to assure good health.
+	  It cultivates immensely cheerful vibes around you, stating an important factor to start, process and 
+	  accomplish your daily tasks or to-do-list-tick :)
+	  </p>
+	  </div>
+  </div>
+
+</div>
+  </div>
+  <center>
+<div class="containercountdown">
+  <img src="imgs/ny.gif" alt="hny" style="width:100%;">
+  <div class="centered"><b><p id="demo"></p></b>
+  </div>
+</div>
+  </center>
+  </div>
+  </div>
+  <div class= "footsection">
+<center>
+    <a href="https://twitter.com/saarvesh_qandt" target="_blank">
+	<i class="fa fa-twitter-square fa-2x social" style="color: #262626"></i></a>  
+    <a href="https://www.linkedin.com/in/sarveshwinsome/" target="_blank">
+	<i class="fa fa-linkedin-square fa-2x social" style="color: #262626"></i></a>
+	<a href="mailto:soulwaybysarvesh@gmail.com" target="_blank">
+	<i class="fa fa-envelope-square fa-2x social" style="color: #262626"></i></a>
+	
+	<p style="font-family: Livvic";> &copy; SoulWay, 2020. All rights reserved.</p>
+	</center>
+
+<b><i>Disclaimer:</b></i><br>
+	Website content is managed by Sarvesh Soni.
+The information and design that is being presented or used are veracious to my knowledge. 
+Any kind of similarity is purely coincidental. 
+The content is subject to change and should not be constructed as a commitment. 
+	</div>
+
+  </body>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 1, 2021 12:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+  </html>
