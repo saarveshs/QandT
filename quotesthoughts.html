@@ -109,25 +109,24 @@
   border: 4px solid #ecb7bf;
 }
 
-.blink {
-  animation: blink-animation 1s steps(5, start) infinite;
-  -webkit-animation: blink-animation 1s steps(5, start) infinite;
-}
-@keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-@-webkit-keyframes blink-animation {
-  to {
-    visibility: hidden;
-  }
-}
-
 .containerimg {
   position: relative;
 }
+.buttonsty {
+  padding: 10px 10px;
+  font-size: 20px;
+  font-family:Livvic;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #d45e70;
+  background-color: #faebed;
+  border-radius: 12px;
+}
 
+img.a {
+  vertical-align: 95%;
+}
 </style>
 </head>
 <body onload="startTime()" style="font-family:Livvic;">
@@ -160,9 +159,13 @@ bad; everything's temporary.. <br>even this passing time!</span></span></p>
 <div style="overflow:auto">
   <div class="main">
   
-  	<span class="blink"><span style="font-size: 18px; color: #da7282">
-	Indulging all the mixed emotions of life with fascinating context</span></span>
-	<br><br></b>
+  
+<button class="buttonsty" onclick="typeWriter()"><b>Magic Quote of the Week</b></button>
+<img class="a" src="imgs/new1.gif" style="width:23px;height:12px;">
+
+<p id="demoz"></p>
+  
+  <br><br></b>
 	
 	<div class="containerimg">
       <img src="imgs/2.jpg" style="width:300px;height:300px;">
@@ -284,6 +287,18 @@ function startTime() {
 function checkTime(i) {
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
   return i;
+}
+
+var i = 0;
+var txt = 'Look up to the ones who have the courage to follow their path! Why? - because it is rare. Why? - because most people desire to achieve the same.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demoz").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
 }
 </script>
 </html>
