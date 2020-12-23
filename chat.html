@@ -200,11 +200,12 @@ var questions = [
     'Do you have a tendency to put in maximum efforts if you run into some setbacks? Yes/No',
     'Do you always look for further betterment in every aspect? Yes/No',
     ' ',
-    'Thank you for your time. Stay safe!'
-    
+    'Thank you for your time. Stay safe!' 
 ];
 
 var num = 0;
+var ans= new Array();
+var c=0;
 
 var inputBox = document.querySelector("#ans");
 var output = document.querySelector("#result");
@@ -213,8 +214,8 @@ output.innerHTML = questions[num];
 function showResponse() {
   var input = inputBox.value;
   if(inputBox.value == "") {
-    
-  }else {
+    }
+	else {
   if(num == 0) {
     output.innerHTML = `Hello ${input}!`;
     inputBox.value = "";
@@ -235,28 +236,28 @@ function showResponse() {
     setTimeout(changeQuestion, 2000);
   } else if(num == 3) {
     output.innerHTML = `You said '${input}'.`;
-    var a = input.toLowerCase();
+    ans[0] = input.toLowerCase();
     inputBox.value = "";
     inputBox.setAttribute("placeholder", "Wait for 2 secs.");
     ++num;
     setTimeout(changeQuestion, 2000);
   } else if(num == 4) {
     output.innerHTML = `You said '${input}'.`;
-    var b = input.toLowerCase();
+    ans[1] = input.toLowerCase();
     inputBox.value = "";
     inputBox.setAttribute("placeholder", "Wait for 2 secs.");
     ++num;
     setTimeout(changeQuestion, 2000);
   } else if(num == 5) {
     output.innerHTML = `You said '${input}'.`;
-    var c = input.toLowerCase();
+    ans[2] = input.toLowerCase();
     inputBox.value = "";
     inputBox.setAttribute("placeholder", "Wait for 2 secs.");
     ++num;
     setTimeout(changeQuestion, 2000);
   } else if(num == 6) {
     output.innerHTML = `You said '${input}'.`;
-    var d = input.toLowerCase();
+    ans[3] = input.toLowerCase();
     inputBox.value = "";
     inputBox.setAttribute("placeholder", "reviewing responses...");
     ++num;
@@ -264,9 +265,11 @@ function showResponse() {
     setTimeout(changeQuestion, 7000);
   }
   }
-  if(num==7){
-    
-    if (a=b=c=d=='yes') {
+  if(num==7)
+     {
+    ans.forEach(check)
+   if(c==4)
+   {
       output.innerHTML="Well done! Motivation is rated VERY HIGHLY. Keep it up!";
       inputBox.setAttribute("placeholder", "");
       ++num;
@@ -288,6 +291,13 @@ function changeQuestion() {
   if(num == 8) {
     inputBox.style.display = "none";
   }
+}
+
+function check(value){
+  
+  if (value == 'yes'){
+    c++;
+ }
 }
 
 $(document).on('keypress', function(e) {
